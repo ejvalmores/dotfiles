@@ -147,7 +147,7 @@ endfunction
 " Find all files in all non-dot directories starting in the working directory.
 " Fuzzy select one of those. Open the selected file with :e.
 " nnoremap <leader>f :call SelectaCommand("find * -type f", "", ":vsplit")<cr>
-nnoremap <leader>f :call SelectaCommand("git ls-files -co --exclude-standard", "", ":vsplit")
+nnoremap <leader>f :call SelectaCommand("git ls-files -co --exclude-standard", "", ":vsplit")<cr>
 
 " Use ag the_silver_searcher instead of Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
