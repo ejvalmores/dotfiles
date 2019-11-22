@@ -23,13 +23,10 @@ Bundle 'gmarik/vundle'
   Bundle 'groenewege/vim-less'
   Bundle 'posva/vim-vue'
   Bundle 'mileszs/ack.vim'
-
-
+  Bundle 'thoughtbot/vim-rspec'
   Bundle 'guns/vim-clojure-static'
   Bundle 'kien/rainbow_parentheses.vim'
-
   Bundle 'flazz/vim-colorschemes'
-
   Bundle 'tpope/vim-sensible'
   ""not sure why this is set in vim sensible, I like it, but maybe
   ""there's a good reason I don't know about? leave it on anyway

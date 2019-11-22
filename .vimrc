@@ -36,7 +36,10 @@ nnoremap <c-l> <c-w>l
 
 " ================ General Config ====================
 
-set number "Line numbers are good
+" set number "Line numbers are good
+" Toggle line numbers
+nnoremap <leader>n :set invnumber<cr>
+
 set backspace=indent,eol,start "Allow backspace in insert mode
 set history=1000 "Store lots of :cmdline history
 set showcmd "Show incomplete cmds down the bottom
@@ -151,3 +154,10 @@ nnoremap <leader>f :call SelectaCommand("git ls-files -co --exclude-standard", "
 
 " Use ag the_silver_searcher instead of Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
